@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Shape : MonoBehaviour
 {
+    [Header("Rigidbody Object")]
+        public RigidBody2D rb;
+
+
     // Start is called before the first frame update
     void Start()
     {
