@@ -8,7 +8,7 @@ public class Shape : MonoBehaviour
         public Rigidbody2D rb;
 
         [Header("default shrinking sppeed")]
-        public float shrinkspeed = 3f;
+        public float shrinkSpeed = 3f;
 
 
     // Start is called before the first frame update
@@ -31,6 +31,17 @@ transform.localScale = Vector3.one * 10f;
     // Update is called once per frame
     void Update()
     {
+transform.localScale -= Vector3.one * shrinkSpeed * Time.deltaTime
+if (transform.localScale.x <= .05f)
+{
+Destroy(gameObject);
+
+
+}
+
+
+
+
 
     }
 }
