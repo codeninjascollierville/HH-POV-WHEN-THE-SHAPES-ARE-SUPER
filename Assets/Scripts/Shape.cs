@@ -31,7 +31,7 @@ transform.localScale = Vector3.one * 10f;
     // Update is called once per frame
     void Update()
     {
-transform.localScale -= Vector3.one * shrinkSpeed * Time.deltaTime
+transform.localScale -= Vector3.one * shrinkSpeed * Time.deltaTime;
 if (transform.localScale.x <= .05f)
 {
 Destroy(gameObject);
