@@ -6,18 +6,20 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
 [Header("Shape Objects")]
-public gameObject[] shapePrefabs
+public GameObject[] shapePrefabs;
 [Header("default spwn delay tome")]
 public float spawnDelay = 2f;
 [Header("dtaulst aoaeb time")]
+public float spawnTime = 3f;
 
 
     // Start is called before the first frame update
     void Start()
     {
 
+
 InvokeRepeating("Spawn", spawnDelay, spawnTime);
-Instantiate(shapePrefabs)
+
     }
 
     // Update is called once per frame
@@ -25,4 +27,22 @@ Instantiate(shapePrefabs)
     {
 
     }
+
+void Spawn()
+{
+
+
+    int randomInt = Random.Range(0, shapePrefabs.Length);
+    Instantiate(shapePrefabs[randomInt], Vector3.zero, Quaternion.identity);
+
+
+
+
+}
+
+
+
+
+
+
 }
