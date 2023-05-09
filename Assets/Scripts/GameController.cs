@@ -40,7 +40,15 @@ void Spawn()
 
 }
 
+public void GameOver(){
 
+CancelInvoke("Spawn");
+
+
+
+
+
+}
 
 
 
