@@ -57,7 +57,11 @@ transform.RotateAround(Vector3.zero, Vector3.forward, movement * Time.fixedDelta
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-Time.timeScale = 0;
+GameObject.Find("GameController").GetComponent<GameController>().GameOver();
+
+
+
+
 
 
     }

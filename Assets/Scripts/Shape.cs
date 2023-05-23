@@ -39,7 +39,7 @@ Destroy(gameObject);
 
 }
 
-
+Score.score++;
 
 
 

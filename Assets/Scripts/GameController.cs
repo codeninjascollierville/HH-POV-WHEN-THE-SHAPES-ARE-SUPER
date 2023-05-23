@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+[Header("gam ove ui oobjeeeeeeeeeecttttt")]
+public GameObject gameOverCanvas;
+
+
 [Header("Shape Objects")]
 public GameObject[] shapePrefabs;
 [Header("default spwn delay tome")]
@@ -43,6 +47,8 @@ void Spawn()
 public void GameOver(){
 
 CancelInvoke("Spawn");
+gameOverCanvas.SetActive(true);
+Time.timeScale = 0;
 
 
 
